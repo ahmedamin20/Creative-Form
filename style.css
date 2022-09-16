@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #161623;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#f00,#f0f);
+    clip-path: circle(40% at right 80%);
+}
+body::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(30% at 10% 10%);
+
+}
+form{
+    position: relative;
+    box-shadow: 20px 20px 50px rgba( 0, 0, 0, 0.5);
+    z-index: 1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 10%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+h1{
+    margin-bottom: 10%;
+    color: azure;
+}
+input{
+    width: 300px;
+    margin: 5%;
+    padding: 2%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border: .1rem solid rgba(48, 151, 236, 0.795);
+    border-radius:.2rem;
+}
+input.btn{
+    position: relative ;
+    display : inline-block ;
+    padding : 8px 50px ;
+    margin-top : 15px ;
+    background :#fff;
+    color : #000 ;
+    border-radius : 20px ;
+    font-weight: 500;
+    width: fit-content;
+    border: none;
+    box-shadow: 0 5px 15px rgba( 0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .5s;
+}
+input.btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+div.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 5% 0;
+}
+h2{
+    color: #fff;
+    font-size: 30px;
+    z-index: 1;
+}
+@media (max-width: 752px) {
+    form{
+        padding: 5%;
+    }
+    div.copyright h2{
+        font-size:15px;
+    }
+}

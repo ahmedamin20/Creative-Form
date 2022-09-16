@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <form action="" method="post">
+        <h2>Connect to WIFI <i class="fa-solid fa-wifi"></i></h2>
+        <input type="text" name="UserName" placeholder="Enter the Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" name="submit" value="Submit" class="btn">
+    </form>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector("form"), {
+            max: 10,
+            speed: 10,
+            glare: true,
+            "max-glare": 1
+        });
+    </script>
+</body>
+
+</html>
